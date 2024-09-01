@@ -2,3 +2,11 @@ body {
     margin: 0;
     background-color: black;
 }
+
+#pepa {
+    transition: transform 2s ease-in-out;
+}
+
+#pepa:hover {
+    transform: scale(1.5);
+}
