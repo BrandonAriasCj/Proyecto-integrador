@@ -8,6 +8,8 @@
         body {
     margin: 0;
     background-color: rgb(172, 163, 163);
+    color: whitesmoke;
+    border: 1px solid white;
 }
 
 #pepa {
@@ -18,10 +20,109 @@
     transform: scale(0.5);
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    width: 100vw;
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header, section{
+    background-color: #08033f;
+}
+#presentacion{
+    background-color: #343157;
+}
+
+.flex{
+    display: flex;
+}
+
+.bordeado{
+    border: 1px solid black;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    width: 100%;
+}
+#opciones li {
+    padding:  0px 10px;
+    list-style: none;
+}
+
+section,header {
+    border: 1px solid whitesmoke;
+}
+#opciones{
+    margin-right:100px;
+}
+.icon {
+    margin-left: 30px;
+}
+a{
+    color: white;
+}
+
+section#presentacion{
+    background-image: url('resources/42f628c84adb23df8dec8749738372c2.gif');
+    background-size: cover; /* Escala la imagen para cubrir el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
     </style>
 </head>
 <body>
-    <h1>A chambear</h1>
-    <img id="pepa" src="resources/baje de pepa.webp" alt="pepa pig en un rodadero" width="400px">
+    <header>
+        <div class="contain">
+            <div class="icon bordeado">
+                <img src="/resources/18babdb3b6bcef57241bb3803556b1ec.png" alt="logo gameTex">
+            </div>
+            <nav>
+                <ul id="opciones" class="flex">
+                    <li><a href="#">Iniciar sesion</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="presentacion">
+            <h1>El ecosistema para los videojuegos</h1>
+            <p>"¡Únete a la batalla y demuestra tu habilidad en nuestros emocionantes torneos de videojuegos! Donde los mejores gamers se enfrentan por la gloria y grandes premios."</p>
+        </section>
+        <section id="eventos">
+            <h2>Eventos</h2>
+        </section>
+        <section id="torneos">
+            <h2>Torneos</h2>
+        </section>
+        <section id="comunidad">
+            <h2>Comunidad</h2>
+        </section>
+    </main>
 </body>
 </html>
